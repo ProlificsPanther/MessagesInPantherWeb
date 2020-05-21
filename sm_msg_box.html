@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="/js/dialogs.js"></script>
+<style>
+.custom{
+text-align:center;
+color:#333;
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+{{form:tag}}
+{{form:info}}
+{{emit:yn_pb}}{{emit:ok_pb}}{{emit:ync_pb}}{{emit:dl}}
+{{form:script}}
+<div id="msg-box-0"></div>
+<div id="msg-box-3"></div>
+<div id="msg-box-4"></div>
+<div style="display:none">{{form:messages}}{{emit:event}}{{emit:msg_id}}</div>
+<script type="text/javascript">
+
+</script>
+</form>
+</body>
+</html>

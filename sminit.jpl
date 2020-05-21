@@ -1,0 +1,6 @@
+proc web_startup()
+{
+call sm_msgread("", 0, MSG_FILENAME, "appmsg.bin")
+public appmsg.jpl
+}
+

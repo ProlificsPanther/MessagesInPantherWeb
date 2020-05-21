@@ -1,0 +1,6 @@
+APP_DUMMY	= This is a dummy message.
+APP_NULLVAL  = Please enter username and password.
+APP_INVALID  = Invalid username or password. Try again!
+APP_WELCOME  = Welcome to Panther Web Application.
+APP_SAVE 	= Your updates are saved.Do you want to exit?
+APP_BEFORE_SAVE= Do you want to save changes?
