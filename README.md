@@ -1,7 +1,7 @@
 # MessagesInPantherWeb
 Display messages in Panther Web Application using JQuery  dialog boxes
 
-# This repo consiste of the following files.
+# This repo consists of the following files.
 
 * Configure SM_MSG_BOX.pdf
 * appmsg
@@ -14,7 +14,7 @@ Display messages in Panther Web Application using JQuery  dialog boxes
 
 # Configure SM_MSG_BOX.pdf
 
-ThisPDF co tains instructions to setup sm_message_box in a Panther Web application
+This PDF contains instructions to set up sm_message_box in a Panther Web application
 
 # appmsg
 
