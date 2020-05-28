@@ -44,6 +44,9 @@ This is the HTML template which is attached to the Panther screen.
 
 This is the intialization JPL file for the Panther Web application.
 
+# Videos and Downloads
+Video Tutorial: https://youtu.be/V1QaSor4nxs
+
 Need a Panther Web 552 Redhat Image? [Click Here](https://hub.docker.com/r/prolificspanther/pantherweb "Named link title") 
 
 [Click Here](https://prolifics.com/panther-trial-license-request/ "Named link title") for a 45-day license.
