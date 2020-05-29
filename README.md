@@ -14,7 +14,7 @@ Display messages in Panther Web Application using JQuery  dialog boxes
 
 # Configure SM_MSG_BOX.pdf
 
-This PDF contains instructions to set up sm_message_box in a Panther Web application
+This PDF contains instructions to set up sm_message_box in a Panther Web application.
 
 # appmsg
 
