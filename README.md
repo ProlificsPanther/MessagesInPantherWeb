@@ -105,12 +105,12 @@ The instructions below illustrate who to handle sm_message_box type alerts in a 
 	
 2. Convert the asci version of your custom msgfile to binary using %SMBASE%\util\msg2bin.exe,
     run the below command
-    **msg2bin appmsg , ** This will generate appmsg.bin
+    **msg2bin appmsg ,** This will generate appmsg.bin
 
 
 3. Add global variables for the messages in your msgfile using %SMBASE%\util\msg2bin.exe, run
     command as below
-    **msg2hdr –jvpf appmsg , ** This will create appmsg.jpl, like below
+    **msg2hdr –jvpf appmsg ,** This will create appmsg.jpl, like below
 
 ````
    global APP_DUMMY(1) = 0    /* This is a dummy message.*/ 
