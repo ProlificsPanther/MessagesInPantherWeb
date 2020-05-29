@@ -105,13 +105,12 @@ The instructions below illustrate who to handle sm_message_box type alerts in a 
 	
 2. Convert the asci version of your custom msgfile to binary using %SMBASE%\util\msg2bin.exe,
     run the below command
-    **msg2bin appmsg ,** This will generate appmsg.bin
+    **msg2bin appmsg **, This will generate appmsg.bin
 
 
 3. Add global variables for the messages in your msgfile using %SMBASE%\util\msg2bin.exe, run
     command as below
-
-msg2hdr –jvpf appmsg , This will create appmsg.jpl, like below
+    **msg2hdr –jvpf appmsg **, This will create appmsg.jpl, like below
 
 ````
    global APP_DUMMY(1) = 0    /* This is a dummy message.*/ 
@@ -122,12 +121,12 @@ msg2hdr –jvpf appmsg , This will create appmsg.jpl, like below
    global APP_BEFORE_SAVE(1) = 5 /* Do you want to save changes? */
 ````
 4. Load the custom msgfile and jpl file when your application initializes. Add the below to your
-    web_startup()<br/>
+    web_startup()
     ````
     proc web_startup()
     {
-       call sm_msgread("", 0, MSG_FILENAME, "appmsg.bin")<br/>
-       public appmsg.jpl<br/>
+       call sm_msgread("", 0, MSG_FILENAME, "appmsg.bin")
+       public appmsg.jpl
     }
    ````
 Make sure these files are accessible to your application i.e. have them in Application directory or
@@ -138,8 +137,7 @@ SMPATH
 **5.** Call the below function where you want to show the message
 
 ```
-call
-sm_web_msgno_box(APP_SAVE,"Confirm",SM_MB_YESNOCANCEL,SM_MB_ICONQUESTION)
+call sm_web_msgno_box(APP_SAVE,"Confirm",SM_MB_YESNOCANCEL,SM_MB_ICONQUESTION)
 ```
 
 Make sure this function call is the last command that is executed in your JPL procedure because
@@ -190,9 +188,8 @@ Example:
 6. Now use a JQuery Dialog box to display this message as below. Have a look to the sample
     dialog.js provided.
 
-### //SM_MB_YESNOCANCEL
-
 ```
+//SM_MB_YESNOCANCEL
 $("#msg-box-3").dialog({                                                                                                                                                                                                                               
     autoOpen  : false,                                                                                                                                                                                                                                
     modal: true,                                                                                                                                                                                                                                      
@@ -251,8 +248,10 @@ Also put <div> with the ids as below
 7. For YES/NO type of message boxes the response can be sent back to Jserver using AJAX calls by
     way of hidden fields such as **“event”** , **“msg_id”** in your screen
 
-**Example**
+
 ```
+Example:
+
 function doSomething (event) {
 	var msgId = $(".message_id").text();
 	callService (event,msgId,serviceCallback);
@@ -288,17 +287,18 @@ function serviceCallback(resultData) {
 ```
 proc web_enter
 {
-if (event=="yes")
-call update() //your logic
-if (event=="no")
-call noUpdate()//your logic
+	if (event=="yes")
+		call update() //your logic
+	if (event=="no")
+		call noUpdate()//your logic
 }
 ```
 
 If there are multiple YES/NO messages in one screen then an array of msg_id, and callback
 functions can be used to differentiate responses for different messages.
-Example
+
 ```
+Example:
 
 proc web_enter
 {
