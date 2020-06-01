@@ -61,7 +61,7 @@ be replaced with calls to the sample JPL function, sm_web_message_box(). If the 
 comes from the message file, an alternate form of this function, sm_web_msgno_box(), may be used
 instead.
 
-Message file helps to have all messages in one place and makes it easier when updates are required. Especially for large application where messages are used repeatedly. But it is not mandatory to use the message file. You can pass the message string directly to the function. The function definition for proc sm_web_message_box() is like below.
+Using a Message file is optional as it helps to have all messages in one place and making it easier when updates are required; especially for larger applications where messages are used repeatedly.You can pass the message string directly to the function. The function definition for proc sm_web_message_box() is like below.
 ````
 proc  sm_web_message_box(text, title, options, icon) 
 { 
