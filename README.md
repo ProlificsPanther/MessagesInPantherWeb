@@ -321,7 +321,7 @@ https://docs.prolifics.com/panther/html/prg_html/libfu231.htm
 For details on our WebSocket technique, email support@prolifics.com
 
 
-# Videos and Downloads
+# Videos and Downloads:
 Video Tutorial: https://youtu.be/V1QaSor4nxs
 
 Need a Panther Web 552 Redhat Image? [Click Here](https://hub.docker.com/r/prolificspanther/pantherweb "Named link title") 
